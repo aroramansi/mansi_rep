@@ -29,7 +29,7 @@ public class ReadTestFromXML {
 	@BeforeTest
 	public void setUp() {
 		driver = BrowserUtility.createBrowser("chrome");
-		driver.get("https://lkmdemoaut.accenture.com/TestMeApp/");
+		driver.get("http://demowebshop.tricentis.com/login");
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.findElement(By.linkText("SignIn")).click();
 	}
